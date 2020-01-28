@@ -12,5 +12,11 @@ h1 {
 table {
 
     font-size: 250%;
+    border-collapse: collapse;
+
+}
+button {
+
+    font-size: 100%;
 
 }

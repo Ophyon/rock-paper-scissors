@@ -1,43 +1,80 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="index css.css">
     <link rel="stylesheet" href="index js.js">
+    <link rel="shortcut icon" type="image/x-icon" href="/rock paper scissors/favicon.ico" />
 </head>
+
 <body>
-<h1 align="center">Rock Paper Scissors</h1>
-<table align="center">
-    <tr>
-        <td>
-             CPU's choice
-        </td>
-        <td style=" color:black; ">
-            Hello my friend.
-        </td>
-        <td>
-            Your choice
-        </td>
-    </tr>
-    <tr>
-        <td id="cpuChoice">
-        </td>
-        <td>
-        </td> 
-        <td id="yourChoice">
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button onclick="rock();">Rock</button>
-        </td>
-        <td>
-            <button onclick="paper();">Paper</button>
-        </td> 
-        <td>
-            <button onclick="scissors();">Scissors</button>
-        </td>
-    </tr>
-</table>
-<script src="index js.js"></script>
+    <div align="center"><img src="/rock paper scissors/logo w text.png" alt="logo big funny haha" width="460"></div>
+    <table align="center">
+        <tr>
+            <td align="center" style="border: 1px solid white;">
+                Your choice
+            </td>
+            <td style=" color:black; ">
+                Hello.
+            </td>
+            <td style="border: 1px solid white;">
+                CPU's choice
+            </td style="border: 1px solid white;">
+        </tr>
+        <tr>
+            <td id="yourChoice" style="border: 1px solid white;" align="center">
+                .
+            </td>
+            <td>
+
+            </td>
+            <td id="cpuChoice" style="border: 1px solid white;" align="center">
+                .
+            </td>
+        </tr>
+    </table>
+    <table align="center">
+        <tr>
+            <td>
+                <button id="button" onclick="button0();">Rock</button>
+            </td>
+            <td>
+                <button id="button1" onclick="button1();">Paper</button>
+            </td>
+            <td>
+                <button id="button2" onclick="button2();">Scissors</button>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table id="counterTable" align="center" style="border: 1px solid white;">
+        <tr style="border: 1px solid white;">
+            <td style="border: 1px solid white;" align="center">Player wins</td>
+            <td style="border: 1px solid white;" align="center" id="p1">🟥</td>
+            <td style="border: 1px solid white;" align="center" id="p2">🟥</td>
+            <td style="border: 1px solid white;" align="center" id="p3">🟥</td>
+            <td style="border: 1px solid white;" align="center" id="p4">🟥</td>
+            <td style="border: 1px solid white;" align="center" id="p5">🟥</td>
+        </tr>
+        <tr style="border: 1px solid white;">
+            <td style="border: 1px solid white;" align="center">Tie</td>
+            <td style="border: 1px solid white;" align="center" id="t1">🟥</td>
+            <td style="border: 1px solid white;" align="center" id="t2">🟥</td>
+            <td style="border: 1px solid white;" align="center" id="t3">🟥</td>
+            <td style="border: 1px solid white;" align="center" id="t4">🟥</td>
+            <td style="border: 1px solid white;" align="center" id="t5">🟥</td>
+        </tr>
+        <tr style="border: 1px solid white;">
+            <td style="border: 1px solid white;" align="center">CPU wins</td>
+            <td style="border: 1px solid white;" align="center" id="c1">🟥</td>
+            <td style="border: 1px solid white;" align="center" id="c2">🟥</td>
+            <td style="border: 1px solid white;" align="center" id="c3">🟥</td>
+            <td style="border: 1px solid white;" align="center" id="c4">🟥</td>
+            <td style="border: 1px solid white;" align="center" id="c5">🟥</td>
+        </tr>
+    </table><h2 align="center" id="ft5w">First to 5 wins!</h2>
+    <h1 align="center" id="end"></h1>
+    <script src="index js.js"></script>
 </body>
